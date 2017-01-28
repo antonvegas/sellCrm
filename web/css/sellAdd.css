@@ -1,0 +1,23 @@
+.imgItem{
+    max-height: 100px;
+}
+
+.redTr{
+    background-color: #f8bfbf!important;
+}
+
+.flex{
+    display: flex;
+}
+.justify{
+    justify-content: space-between;
+}
+
+.margin-top-7{
+    margin-top: 7px;
+}
+
+.receipt{
+    border-bottom: 2px dotted;
+    margin-bottom: 11px;
+}

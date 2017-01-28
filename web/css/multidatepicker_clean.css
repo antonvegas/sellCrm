@@ -1,0 +1,77 @@
+/* Datepicker border styling */
+#blockDatePickerFromTo .datepicker {
+ /* background-color: #F7F7F7;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px;*/
+}
+
+/* Tighten up the spacing between multiple calendars */
+#blockDatePickerFromTo .datepickerSpace div {
+  width:2px;
+}
+
+/* Grey background behind Month Name row, and blue text */
+#blockDatePickerFromTo div.datepicker th {
+  background-color:#DDDDDD;
+}
+#blockDatePickerFromTo div.datepicker th a.datepickerMonth {
+  color:#008ED6;
+  font-weight:normal;
+}
+
+/* style the day of week header cells */
+#blockDatePickerFromTo div.datepicker th {
+  color: black;
+  font-weight: bold;
+}
+/* grey underline beneath day of week row */
+#blockDatePickerFromTo div.datepicker table thead tr.datepickerDoW th {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/* Black text, white background, and grey borders around day cells */
+#blockDatePickerFromTo div.datepicker a,
+#blockDatePickerFromTo div.datepicker a:hover {
+  color: black;
+}
+#blockDatePickerFromTo div.datepicker table.datepickerViewDays,
+#blockDatePickerFromTo div.datepicker table.datepickerViewMonths,
+#blockDatePickerFromTo div.datepicker table.datepickerViewYears {
+  background-color:white;
+}
+#blockDatePickerFromTo div.datepicker table tbody.datepickerDays td {
+  border: 1px solid #F7F7F7;
+}
+
+/* blue cell color for selected days */
+#blockDatePickerFromTo tbody.datepickerDays td.datepickerSelected {
+  background-color:#0077CC;
+}
+
+/* Grey out dates in the future */
+#blockDatePickerFromTo div.datepicker td.datepickerFuture a {
+  /*color:#DDDDDD;*/
+}
+
+/* yellow cell background on hover */
+#blockDatePickerFromTo div.datepicker tbody.datepickerDays td:hover {
+  background-color: #FFCC33;
+}
+
+/* Bold today's date */
+#blockDatePickerFromTo div.datepicker td.datepickerToday a {
+  font-weight:bold;
+}
+
+/* cells are wider in the clean style */
+#blockDatePickerFromTo .datepickerYears a, .datepickerMonths a {
+  width: 42px;
+}
+#blockDatePickerFromTo .datepickerMonths td:first-child a,
+#blockDatePickerFromTo .datepickerYears td:first-child a {
+  width:39px;
+}
+#blockDatePickerFromTo div.datepicker th a.datepickerMonth {
+  width:121px;
+}
