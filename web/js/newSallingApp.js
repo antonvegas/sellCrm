@@ -33,6 +33,17 @@ var App = (function () {
             requestForGettingNewItem();
         });
 
+        $('html').keydown(function(eventObject){ //отлавливаем нажатие клавиш
+            if (event.keyCode == 13) { //если нажали Enter, то true
+                if(!articleInput.val()){
+                    alert('Отсканируйте артикул!');
+                    return false;
+                }
+
+                requestForGettingNewItem();
+            }
+        });
+
         articleInput.on('focus', function () {
             articleInput.val('');
         });
@@ -70,6 +81,7 @@ var App = (function () {
             data: {article: articleInput.val()},
             dataType: "json",
             success: function(data){
+                articleInput.val('');
                 if(data){
 
                     if(debug)

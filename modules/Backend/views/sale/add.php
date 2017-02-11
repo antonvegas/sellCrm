@@ -146,6 +146,6 @@ $this->params['breadcrumbs'][] = $this->title;
     Modal::end();
 ?>
 <?php
-    $this->registerJsFile('/js/newSallingApp.js?v=9', ['depends' => [\yii\web\JqueryAsset::className()]]);
+    $this->registerJsFile('/js/newSallingApp.js?v=11', ['depends' => [\yii\web\JqueryAsset::className()]]);
     $this->registerCssFile('/css/sellAdd.css?v=3');
 ?>
